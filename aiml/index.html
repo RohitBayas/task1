@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0d47a1" />
+  <link rel="icon" href="icons/icon-192.png" type="image/png" />
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').then(() => {
+          console.log("Service Worker Registered");
+        });
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>John Doe</h1>
+    <p>Web Developer | Designer | Tech Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li>Project One – Portfolio Website</li>
+      <li>Project Two – E-commerce Template</li>
+      <li>Project Three – Blog Layout</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, React</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p>Intern @ XYZ Tech (2024)</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe</p>
+  </footer>
+</body>
+</html>
